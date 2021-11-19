@@ -9,5 +9,6 @@ tip_percent = float(tip) / 100
 tip_total = float(bill) * tip_percent
 bill_total = float(bill) + tip_total
 amount_per_person = round(bill_total / int(num_of_people), 2)
+amount_per_person_formatted = "{:.2f}".format(amount_per_person)
 
-print(f"Each person should pay ${amount_per_person}")
+print(f"Each person should pay ${amount_per_person_formatted}")
